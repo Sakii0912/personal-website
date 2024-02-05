@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="blogstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="background1">
+    <h1>My Blog 1</h1>
+    <div>
+        <h3>Any Topic</h3>
+
+        <h6>By: Name</h6>
+
+    </div>
+
+    <h4>Add a pic here if you want</h4>
+
+    <div>
+        <p>
+            Heading paragraph of content
+        </p>
+    
+        <p>
+            Body of Blog
+        </p>
+    
+        <p>
+            Conclusion of Blog
+        </p>
+    </div>
+
+    <div class="comment1">
+        <h3>Comments</h3>
+        <h4>Commenter1</h5>
+        <p>Contents of comment</p>
+        <h4>Commenter2</h4>
+        <p>Contents of comment</p>
+    </div>
+
+    <div class="likebutton">
+        
+        <h4>Click this button to like this blog.<br></h4>
+        <p>
+            <button id="like" onclick="liked()">
+                <i class="fa fa-thumbs-up"></i>
+                <span class="icon">Like</span>
+                
+            </button>
+        </p>
+        <script>
+            function liked(){
+              var element = document.getElementById("like");
+              element.classList.toggle("liked");
+            }
+          </script>
+    </div>
+</body>
